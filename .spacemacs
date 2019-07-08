@@ -372,6 +372,12 @@ before packages are loaded. If you are unsure, you should try in setting them in
                       :box nil
                       :inherit 'mode-line)
   (powerline-default-theme)
+
+  ; key bindings
+  (bind-key "C-h" 'delete-backward-char)
+  (bind-key "C-t" 'ace-window)
+  (bind-key "C-x C-b" 'helm-buffers-list)
+
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration.
